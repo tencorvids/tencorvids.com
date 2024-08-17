@@ -1,0 +1,41 @@
+---
+
+---
+
+<button
+    id="theme-toggle"
+    aria-label="Toggle theme"
+    class="absolute top-4 left-4 px-3 py-2 bg-layer-01 w-fit h-fit font-mono text-xs text-secondary border border-[var(--text-text-secondary)] hover:bg-background-hover"
+>
+    <span>&gt; toggle theme</span>
+</button>
+
+<script>
+    const themeToggle = document.getElementById(
+        "theme-toggle",
+    ) as HTMLButtonElement;
+    const htmlElement = document.documentElement;
+
+    function setTheme(theme: string): void {
+        localStorage.setItem("theme", theme);
+        htmlElement.setAttribute("data-theme", theme);
+    }
+
+    function toggleTheme(): void {
+        const currentTheme =
+            htmlElement.getAttribute("data-theme") ||
+            (window.matchMedia("(prefers-color-scheme: dark)").matches
+                ? "dark"
+                : "light");
+        const newTheme = currentTheme === "light" ? "dark" : "light";
+        setTheme(newTheme);
+    }
+
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "light" || savedTheme === "dark") {
+        setTheme(savedTheme);
+    }
+
+    themeToggle.addEventListener("click", toggleTheme);
+</script>
+

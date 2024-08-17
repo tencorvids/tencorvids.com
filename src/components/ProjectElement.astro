@@ -1,0 +1,30 @@
+---
+interface Props {
+    name: string;
+    description: string;
+    technology: string;
+    url: string;
+}
+
+const { name, description, technology, url } = Astro.props;
+---
+
+<article class="project-element">
+    <a
+        href={url}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="flex gap-2 p-2 items-center text-sm hover:bg-background-hover max-sm:flex-col max-sm:items-start"
+    >
+        <h3 class="project-name">{name}</h3>
+        <p class="project-description text-secondary font-light">
+            {description}
+        </p>
+        <div
+            class="separator bg-[var(--text-text-secondary)] h-px flex-grow max-sm:w-full"
+        >
+        </div>
+        <span class="project-technology text-secondary">{technology}</span>
+    </a>
+</article>
+

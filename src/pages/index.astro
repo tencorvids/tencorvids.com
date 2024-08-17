@@ -1,0 +1,101 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import ProjectElement from "../components/ProjectElement.astro";
+import ThemeSwitcher from "../components/ThemeSwitcher.astro";
+---
+
+<BaseLayout title="rew | Software Engineer">
+    <ThemeSwitcher />
+    <main class="max-w-[672px] flex flex-col gap-8">
+        <header>
+            <h1 class="font-light text-2xl">rew</h1>
+        </header>
+        <section aria-label="About Me">
+            <p>
+                I'm a software engineer in the NYC area, specializing in
+                low-level communication protocols and IoT solutions. My work
+                focuses on building reliable, scalable systems for enterprise
+                clients, covering full-stack development, hardware integration,
+                and DevOps.
+            </p>
+
+            <br />
+
+            <p>
+                Currently, I'm leading the development of an IoT platform for
+                global deployment, managing remote IT and AV equipment. I
+                oversee front-end and back-end development teams, often stepping
+                in as a "glue engineer" to create tools that solve specific
+                issues.
+            </p>
+
+            <br />
+
+            <p>
+                My projects involve low-frequency, long-range technologies like
+                LoRa, impacting IT/AV infrastructure management for major
+                companies such as IBM, JP Morgan Chase, and Bristol Myers
+                Squibb. I primarily code in Go, Python, and
+                JavaScript/TypeScript to build efficient systems at various
+                levels. Outside of work, I'm passionate about Nix(OS) and
+                NeoVim.
+            </p>
+        </section>
+
+        <nav class="flex gap-4 text-secondary text-xs">
+            <a
+                href="mailto:rew@tencorvids.com"
+                target="_blank"
+                rel="noopener noreferrer">mail</a
+            >
+            <a
+                href="https://linkedin.com/in/andrewvota"
+                target="_blank"
+                rel="noopener noreferrer">linkedin</a
+            >
+            <a
+                href="https://github.com/tencorvids"
+                target="_blank"
+                rel="noopener noreferrer">github</a
+            >
+            <a
+                href="https://x.com/tencorvids"
+                target="_blank"
+                rel="noopener noreferrer">x/twitter</a
+            >
+        </nav>
+
+        <section aria-label="Projects" class="flex flex-col gap-4">
+            <ProjectElement
+                name="dotfiles"
+                description="My NixOS & Vim dotfiles for all of my hosts"
+                technology="Nix | Bash | Lua"
+                url="https://github.com/tencorvids/_"
+            />
+            <!-- <ProjectElement -->
+            <!--     name="at-at" -->
+            <!--     description="Serial port probing tool for the terminal" -->
+            <!--     technology="Go" -->
+            <!--     url="https://github.com/tencorvids/at-at" -->
+            <!-- /> -->
+            <!-- <ProjectElement -->
+            <!--     name="scrying-glass" -->
+            <!--     description="Magic: The Gathering card identification using computer vision" -->
+            <!--     technology="Python" -->
+            <!--     url="https://github.com/tencorvids/scrying-glass" -->
+            <!-- /> -->
+            <ProjectElement
+                name="uaas"
+                description='Functional satire inspired by npm&apos;s left-pad incident; "Utilities as a Service"'
+                technology="Go | JS/TS"
+                url="https://github.com/tencorvids/uaas"
+            />
+            <!-- <ProjectElement -->
+            <!--     name="charity" -->
+            <!--     description="Get another life in Minecraft's Hardcore mode if you donate to charity" -->
+            <!--     technology="Java" -->
+            <!--     url="https://github.com/tencorvids/charity" -->
+            <!-- /> -->
+        </section>
+    </main>
+</BaseLayout>

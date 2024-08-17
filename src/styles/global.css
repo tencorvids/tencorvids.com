@@ -1,0 +1,68 @@
+@import url('./fonts.css');
+
+:root {
+  /* Font variables */
+  --font-sans: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
+  --font-serif: 'IBM Plex Serif', 'Georgia', Times, serif;
+  --font-mono: 'IBM Plex Mono', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', Courier, monospace;
+
+  /* Color variables */
+  --base-white: #ffffff;
+  --base-black: #000000;
+  --gray-10: #f4f4f4;
+  --gray-20: #c6c6c6;
+  --gray-30: #a8a8a8;
+  --gray-40: #8d8d8d;
+  --gray-50: #6f6f6f;
+  --gray-60: #525252;
+  --gray-70: #393939;
+  --gray-80: #262626;
+  --gray-90: #161616;
+  --gray-100: #0a0a0a;
+
+  /* Light theme variables (default) */
+  --background-background: var(--base-white);
+  --layer-layer-01: var(--gray-10);
+  --text-text-primary: var(--gray-100);
+  --text-text-secondary: var(--gray-70);
+  --background-background-hover: rgba(111, 111, 111, 0.12);
+}
+
+/* Dark theme variables */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-background: var(--gray-100);
+    --layer-layer-01: var(--gray-90);
+    --text-text-primary: var(--gray-10);
+    --text-text-secondary: var(--gray-30);
+    --background-background-hover: rgba(111, 111, 111, 0.18);
+  }
+}
+
+/* Override for manually set light theme */
+[data-theme="light"] {
+  --background-background: var(--base-white);
+  --layer-layer-01: var(--gray-10);
+  --text-text-primary: var(--gray-100);
+  --text-text-secondary: var(--gray-70);
+  --background-background-hover: rgba(111, 111, 111, 0.12);
+}
+
+/* Override for manually set dark theme */
+[data-theme="dark"] {
+  --background-background: var(--gray-100);
+  --layer-layer-01: var(--gray-90);
+  --text-text-primary: var(--gray-10);
+  --text-text-secondary: var(--gray-30);
+  --background-background-hover: rgba(111, 111, 111, 0.18);
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--background-background);
+  color: var(--text-text-primary);
+}
+
+.sans { font-family: var(--font-sans); }
+.serif { font-family: var(--font-serif); }
+.mono { font-family: var(--font-mono); }
