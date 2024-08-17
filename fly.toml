@@ -1,9 +1,9 @@
-# fly.toml app configuration file generated for tencorvids on 2024-08-17T18:23:18-04:00
+# fly.toml app configuration file generated for tencorvids on 2024-08-17T18:59:06-04:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'tencorvids.com'
+app = 'tencorvids'
 primary_region = 'ewr'
 
 [build]
