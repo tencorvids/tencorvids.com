@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.2.0](https://github.com/tencorvids/tencorvids.com/compare/v0.1.2...v0.2.0) (2024-08-22)
+
+
+### Features
+
+* Add `x` project element ([a1dceef](https://github.com/tencorvids/tencorvids.com/commit/a1dceef682912168819c47ae15716fe10779ce5a))
+
+
+### Miscellaneous Chores
+
+* Release 0.2.0 ([f23fb8b](https://github.com/tencorvids/tencorvids.com/commit/f23fb8b3a069f751c08c37c54534b91611bb219f))
+
 ## [0.1.2](https://github.com/tencorvids/tencorvids.com/compare/v0.1.0...v0.1.2) (2024-08-17)
 
 
