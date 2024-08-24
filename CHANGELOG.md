@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.0](https://github.com/tencorvids/tencorvids.com/compare/v0.3.0...v0.4.0) (2024-08-24)
+
+
+### Features
+
+* Add `tencorvids.com` project element ([9becdad](https://github.com/tencorvids/tencorvids.com/commit/9becdadb5f191c6e1d954a72f5cf9f94eaf03468))
+
 ## [0.3.0](https://github.com/tencorvids/tencorvids.com/compare/v0.2.0...v0.3.0) (2024-08-24)
 
 
