@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.0](https://github.com/tencorvids/tencorvids.com/compare/v0.2.0...v0.3.0) (2024-08-24)
+
+
+### Features
+
+* Add `imposter` project element ([4eae497](https://github.com/tencorvids/tencorvids.com/commit/4eae49702ca75beba79339ee5c817d61538f2dc5))
+
 ## [0.2.0](https://github.com/tencorvids/tencorvids.com/compare/v0.1.2...v0.2.0) (2024-08-22)
 
 
