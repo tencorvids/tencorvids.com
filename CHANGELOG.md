@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.0](https://github.com/tencorvids/tencorvids.com/compare/v0.4.0...v0.5.0) (2024-08-25)
+
+
+### Features
+
+* Add `scrying-glass` project element ([1ab4f00](https://github.com/tencorvids/tencorvids.com/commit/1ab4f00a5355d2856c261b0b98fa68f04772c9be))
+
 ## [0.4.0](https://github.com/tencorvids/tencorvids.com/compare/v0.3.0...v0.4.0) (2024-08-24)
 
 
